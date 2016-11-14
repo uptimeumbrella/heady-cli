@@ -7,7 +7,9 @@
   "files": [
     "index.js"
   ],
-  "bin": "index.js",
+  "bin": {
+    "heady": "index.js"
+  },
   "scripts": {},
   "repository": "johnotander/heady-cli",
   "keywords": [

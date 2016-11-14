@@ -1,0 +1,27 @@
+{
+  "name": "heady-cli",
+  "description": "HEAD sites via a cli program",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "bin": "index.js",
+  "scripts": {},
+  "repository": "johnotander/heady-cli",
+  "keywords": [
+    "head",
+    "uptime",
+    "cli-app"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "heady": "^1.0.4",
+    "is-blank": "^1.1.0",
+    "is-present": "^1.0.0",
+    "meow": "^3.7.0",
+    "shtml": "^0.1.0"
+  },
+  "devDependencies": {}
+}

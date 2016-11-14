@@ -23,6 +23,16 @@ const cli = meow(shtml`
   }
 })
 
+const handleResponse = res => {
+  printResponse(res)
+
+  if (res.code >= 400) process.exit(1)
+}
+
+const printResponse = res => {
+  console.log(res)
+}
+
 const url = cli.input[0]
 
 if (isBlank(url)) {
@@ -31,4 +41,4 @@ if (isBlank(url)) {
 }
 
 heady(url)
-  .then(console.log)
+  .then(handleResponse)
